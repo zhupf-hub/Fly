@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 原生打飞机游戏</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="plane.js"></script>
+</head>
+
+<body>
+    <div id="game">
+        <div id="gameStart">
+            <span>开始游戏</span>
+            <span class="aboutgame">关于游戏</span>
+            <span class="exitgame" onclick="ExitGame()">退出游戏</span>
+            <div class="logo">
+                <img src="image/logo.png" alt="" width="280px" height="70px">
+            </div>
+            <div class="go">
+                <img src="image/go.png" alt="" width="50px" height="50px">
+            </div>
+
+        </div>
+        <div id="gameEnter" class="abc1">
+            <div id="myPlane">
+                <img src="image/my.png" alt="">
+
+            </div>
+            <div id="bullets">
+            </div>
+            <div id="enemys"></div>
+            <div id="scores">
+                <p>分数 ：<span>0</span>分 &nbsp;&nbsp;&nbsp;&nbsp;level : <span>1</span></p>
+            </div>
+        </div>
+    </div>
+    <audio id="myMusic" src="./music/plan.mp3" controls="controls">您的浏览器不支持播放！<audio>
+        <audio id="Bomb" src="./music/bomb.wav" controls="controls">您的浏览器不支持播放！</audio>
+    <audio id="Zidan" src="./music/zidan.wav" controls="controls">您的浏览器不支持播放！</audio>
+</body>
+
+</html>
